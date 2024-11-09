@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isi - Kuliner di Solo</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Ayo Kulineran di Kota Solo!</h1>
+	    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="content.html">Kuliner Solo</a>
+                <a href="feedback.html">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="music-btn-container">
+        <button onclick="toggleMusic()">⏯️ Putar/Jeda Musik</button>
+    </div>
+
+    <audio id="background-music" src="audio/lagu_solo.mp3" loop></audio>
+
+    <main>
+        <h2>Makanan Khas Solo</h2>
+
+        <section>
+            <article>
+                <img src="images/selat_solo.jpg" alt="Selat Solo" class="img-crop2">
+                <h4>Selat Solo</h4>
+                <p>Kalian suka makanan berat tapi manis? Selat Solo solusinya! Selat Solo merupakan hidangan yang terinspirasi dari steak dengan kuah manis gurih, disajikan bersama telur, daging, dan sayuran.</p>
+                <a href="https://maps.app.goo.gl/Bt1aLMTueuCFyWyD9" target="_blank">
+                    <img src="images/logo_gmaps.jpg" alt="Google Maps Logo" class="gmaps-logo">
+                </a>
+            </article>
+
+            <article>
+                <img src="images/timlo.jpg" alt="Timlo Solo" class="img-crop2">
+                <h4>Timlo Solo</h4>
+                <p>Timlo Solo adalah hidangan sup dengan isian sosis, telur, dan daging ayam, sangat cocok dinikmati saat hangat. Gampangannya Timlo Solo ini nyerempet soto cuma versi maknyusnya, deh! Wajib cobain kalo ke Solo.</p>
+                <a href="https://maps.app.goo.gl/BjdCU3e13zPtMeT79" target="_blank">
+                    <img src="images/logo_gmaps.jpg" alt="Google Maps Logo" class="gmaps-logo">
+                </a>
+            </article>
+
+            <article>
+                <img src="images/serabi_solo.jpg" alt="Serabi Solo" class="img-crop2">
+                <h4>Serabi Solo</h4>
+                <p>Serabi Solo adalah pancake tradisional yang terbuat dari santan dan tepung beras, biasanya disajikan dengan gula merah. Di Solo, serabi adalah desert yang terkenal dari sini, dan enggak cuma rasa manis aja. Ada durian, kacang hijau, bahkan variasi gurih juga ada, loh!</p>
+                <a href="https://maps.app.goo.gl/vU6wJiosWxERXH9X9" target="_blank">
+                    <img src="images/logo_gmaps.jpg" alt="Google Maps Logo" class="gmaps-logo">
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Learning Labs 2024 L0124094 Daffa Dewanda Putra</p>
+    </footer>
+
+    <script>
+        // Fungsi untuk mengontrol pemutaran musik latar
+        function toggleMusic() {
+            const music = document.getElementById("background-music");
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        }
+    </script>
+</body>
+</html>
