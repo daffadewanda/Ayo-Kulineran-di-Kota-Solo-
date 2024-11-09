@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('../images/background_index.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+header h1 {
+    font-family: 'Fredoka', sans-serif; 
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em; /* Ukuran font h2 */
+    margin-bottom: 1em;
+}
+
+.highlight-item, article {
+    display: inline-block;
+    width: 45%;
+    margin: 1%;
+}
+
+.highlight-item img, article img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background-image: url('../images/background_index.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.music-btn-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.music-btn-container button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #D2B48C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.music-btn-container button:hover {
+    background-color: #C6A87B;
+}
+
+.img-crop {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.img-crop2 {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.gmaps-logo {
+    width: 50px;
+    height: auto;
+}
